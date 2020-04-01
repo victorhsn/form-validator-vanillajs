@@ -43,12 +43,12 @@ function checkEmail(input) {
     if(re.test(input.value.trim())) {
         showSuccess(input);
     } else {
-        showError(input, 'Email is not valid.');
+        showError(input, 'is not valid.');
     }
 }
 
 function checkPasswordMatch(input1, input2) {
-    if(input1 !== input2) {
+    if(input1.value !== input2.value) {
         showError(input2, 'do not match');
     }
 }
